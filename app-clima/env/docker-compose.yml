@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  appclima:
+    container_name: 'appclima'
+    image: 'postgres:12'
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin@123
+      POSTGRES_DB: appclima
+    ports:
+      - 5432:5432
